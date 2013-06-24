@@ -1,4 +1,4 @@
-# Snipmate snippets for [Cint](http://www.cint.com) vim users
+# Snipmate snippets that I use
 
 ## Install
 * copy the files to your `~/.vim`
