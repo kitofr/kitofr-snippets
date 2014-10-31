@@ -3,6 +3,7 @@ snippet sfun
 	  ${3:/* fill me out! */}
 	};
 
+
 snippet pfun
 	p.${1:function name} = function(${2:arguments}) {
 	  ${3:/* fill me out! */}
@@ -15,13 +16,24 @@ snippet ctrl
 	  ${4:* fill me out! */}
 	}
 
-snippet ns
-	namespace('cint.csa.${1:name}', function(context){
-	  context.${2:name} = function(${3:arguments}){
-		${4:/* some stuff */}
-	  };
+snippet defnn
+	(defn ${1:name} [${2}]
+	  ${3}
+	)
 
-	  var p = context.$2.prototype;
-	  ${5:/* the rest*/}
+snippet jit
+	it('${1:name}', function(){
+	  ${2:body} 
 	});
+
+snippet jdesc
+	describe('${1:name}', function(){
+	    ${2:body} 
+	});
+
+snippet :div
+	[:div ${1:content}]
+
+snippet :div@
+	[:div {${1:attributes} } ${2:values}]
 
