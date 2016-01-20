@@ -37,3 +37,12 @@ snippet :div
 snippet :div@
 	[:div {${1:attributes} } ${2:values}]
 
+
+snippet imp
+	import ${1:library}
+
+snippet imp..
+	import ${1:library} exposing (..)
+
+snippet elmmod
+	module `expand('%:h:t:r')`.`expand('%:t:r')` where
