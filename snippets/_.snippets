@@ -1,37 +1,29 @@
-snippet sfun
-	$scope.${1:function name} = function(${2:arguments}) {
-	  ${3:/* fill me out! */}
-	};
-
-
 snippet pfun
 	p.${1:function name} = function(${2:arguments}) {
 	  ${3:/* fill me out! */}
 	};
-
-snippet ctrl
-	${1:name}.$inject = ['$scope', ${2}];
-	
-	function $1($scope, ${3}) {
-	  ${4:* fill me out! */}
-	}
 
 snippet defnn
 	(defn ${1:name} [${2}]
 	  ${3}
 	)
 
-snippet it
-	it('${1:name}', function (){
-		${2:body} 
-	});
-
 snippet desc
-	describe('${1:name}', function (){
-		${2:body} 
+	describe('${1:name}', function () {
+		${2:body}
 	});
 
-snippet func
+snippet it
+	it('${1:name}', function () {
+		${2:body}
+	});
+
+snippet fun:
+	${1:function name}: function (${2:args}) {
+		${3:body}
+	},
+
+snippet fun,
 	function () {
 		${1:body}
 	}
