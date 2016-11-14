@@ -22,21 +22,25 @@ snippet defnn
 	)
 
 snippet it
-	it('${1:name}', function(){
-	  ${2:body} 
+	it('${1:name}', function (){
+		${2:body} 
 	});
 
 snippet desc
-	describe('${1:name}', function(){
-	    ${2:body} 
+	describe('${1:name}', function (){
+		${2:body} 
 	});
+
+snippet func
+	function () {
+		${1:body}
+	}
 
 snippet :div
 	[:div ${1:content}]
 
 snippet :div@
 	[:div {${1:attributes} } ${2:values}]
-
 
 snippet imp
 	import ${1:library}
@@ -46,3 +50,6 @@ snippet imp..
 
 snippet elmmod
 	module `expand('%:h:t:r')`.`expand('%:t:r')` where
+
+snippet A.style
+	A.style [("${1:attr}", "${2:val}")]
